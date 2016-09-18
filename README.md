@@ -53,8 +53,9 @@ The first example case defines the density of helium at atmospheric pressure (`1
 ## Units
 
 - All the fluid properties (pressure, temperature, density, enthalpy, etc) inside of `HE2MATH` functions can be defined with units. Unitless variables are assumed to be in SI system.
-- HE2MATH **does not** verify the validity of units, i.e. replacement of `Pa` with `kg` would lead to **the exact same result**. That is because `HE2MATH` only rescales all the units to their corresponding SI representations. Since `kg` is a standard SI unit, it is not rescaled after `HE2MATH` function call.
+- `HE2MATH` **does not** verify the validity of units, i.e. replacement of `Pa` with `kg` would lead to **the exact same result**. That is because `HE2MATH` only rescales all the units to their corresponding SI representations. Since `kg` is a standard SI unit, it is not rescaled after `HE2MATH` function call.
 - All the values are returned by `HE2MATH` functions  with units. Returned values can be rescaled in a standard Mathcad-way by placing a unit next to the variable.
+- Avoid, if possible, working with unitless variables.
 
 ![][mc_example_02_he]
 
